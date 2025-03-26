@@ -1,7 +1,5 @@
 # ASCON-128 Lightweight Cryptography Implementation
 
-![ASCON Logo](https://ascon.iaik.tugraz.at/images/ascon_logo.png)
-
 A pure Python implementation of the ASCON-128 authenticated encryption algorithm, winner of the NIST Lightweight Cryptography Competition (2019-2023).
 
 ## Table of Contents
@@ -28,16 +26,16 @@ ASCON is a family of lightweight authenticated encryption schemes designed for c
 
 ## Features
 
-- 🚀 **Complete ASCON-128 implementation** including:
+- **Complete ASCON-128 implementation** including:
   - Encryption (`ascon_encrypt`)
   - Decryption (`ascon_decrypt`)
   - Authentication tag generation/verification
-- ⚡ **Optimized for clarity** while maintaining cryptographic correctness
-- 📊 **Built-in benchmarking** tools:
+- **Optimized for clarity** while maintaining cryptographic correctness
+- **Built-in benchmarking** tools:
   - Execution time profiling (`timeit_bench.py`)
   - Memory usage analysis (`mem_bench.py`)
   - Detailed performance metrics (`cprofile_bench.py`)
-- 🔒 **Secure by default**:
+- **Secure by default**:
   - Proper nonce handling
   - Constant-time operations where applicable
   - Automatic tag verification
@@ -150,10 +148,10 @@ Encryption benchmark:
 
 ## Security Considerations
 
-- 🔑 **Key Management**: Always use cryptographically secure random keys
-- 🔄 **Nonce Reuse**: Never reuse a (key, nonce) pair
-- ⚠️ **Side Channels**: This implementation is not guaranteed to be constant-time
-- 🛡️ **Authentication**: Always verify tags before processing decrypted data
+- **Key Management**: Always use cryptographically secure random keys
+- **Nonce Reuse**: Never reuse a (key, nonce) pair
+- **Side Channels**: This implementation is not guaranteed to be constant-time
+- **Authentication**: Always verify tags before processing decrypted data
 
 Recommended nonce generation:
 ```python
